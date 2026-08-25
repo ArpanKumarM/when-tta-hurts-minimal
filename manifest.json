@@ -1,73 +1,86 @@
 {
   "canonical_artifact_version": "generation-2",
-  "canonical_summary_sha256": "23cc083741e4e16fae232c9fce7d2c4095bc4e40d5897fd7956c550a78e24fce",
-  "release_base_url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0",
+  "source_summary_sha256": "23cc083741e4e16fae232c9fce7d2c4095bc4e40d5897fd7956c550a78e24fce",
+  "release_repo": "ArpanKumarM/when-tta-hurts-minimal",
+  "release_tag": "artifacts-v1",
   "archives": [
     {
       "filename": "checkpoints_block_a.tar.gz",
       "content": "block A training checkpoints",
       "size_bytes": 8537670,
       "sha256": "9314082cdbca740442c7f6d8c9d94f7bda163886391a14bacb4dbd612786e00b",
-      "extract_to": "assets/checkpoints",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_a.tar.gz"
+      "extract_to": "assets/checkpoints"
     },
     {
       "filename": "checkpoints_block_b.tar.gz",
       "content": "block B training checkpoints",
       "size_bytes": 2140578,
       "sha256": "e97c13ff67f2d6519fa3d7ac6384e93079190ff70af71b9993e5cc7b549e7cd4",
-      "extract_to": "assets/checkpoints",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_b.tar.gz"
+      "extract_to": "assets/checkpoints"
     },
     {
       "filename": "checkpoints_block_c.tar.gz",
       "content": "block C training checkpoints",
       "size_bytes": 124623331,
       "sha256": "57e2d22ed7484f92f51e355007eb7e1a375434aba750a65235a46b1094924d67",
-      "extract_to": "assets/checkpoints",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_c.tar.gz"
+      "extract_to": "assets/checkpoints"
     },
     {
       "filename": "checkpoints_block_d.tar.gz",
       "content": "block D training checkpoints",
       "size_bytes": 2139998,
       "sha256": "51738a4be9f3a517af5ac7ad81c2e927fc133e6fb696df6ae40947e9d1bf77e2",
-      "extract_to": "assets/checkpoints",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_d.tar.gz"
+      "extract_to": "assets/checkpoints"
     },
     {
       "filename": "predictions_block_a.tar.gz",
       "content": "block A final-test predictions",
       "size_bytes": 442103319,
       "sha256": "030e625d98d292577c8c51237b042fa8124a25f20e8f64b27fdb6f1e410045bc",
-      "extract_to": "assets/predictions",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_a.tar.gz"
+      "extract_to": "assets/predictions"
     },
     {
       "filename": "predictions_block_b.tar.gz",
       "content": "block B final-test predictions",
       "size_bytes": 113664183,
       "sha256": "3fc8ea099c96ff0ff157cdefdd74b65adbaa442afe76dd5a5ab151f411c4b182",
-      "extract_to": "assets/predictions",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_b.tar.gz"
+      "extract_to": "assets/predictions"
     },
     {
       "filename": "predictions_block_c.tar.gz",
       "content": "block C final-test predictions",
       "size_bytes": 17139287,
       "sha256": "192ee39f457555e89941abd0be2d656496cc2d86a939b842392597b38bd7f4c3",
-      "extract_to": "assets/predictions",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_c.tar.gz"
+      "extract_to": "assets/predictions"
     },
     {
       "filename": "predictions_block_d.tar.gz",
       "content": "block D final-test predictions",
       "size_bytes": 114473017,
       "sha256": "a1782fcedebb2ac73c3e098b71c29b350400717cdfbd0aa2bb83576c5e674639",
-      "extract_to": "assets/predictions",
-      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_d.tar.gz"
+      "extract_to": "assets/predictions"
     }
   ],
+  "canonical_outputs": {
+    "results/summary.json": "60cf835ada813236f24ae9c357a2818a92058962f3e288ac57aa88582e751c50",
+    "results/tables/table_1_design_classification.csv": "91e00dd2456b1e9bb33ed9844928d0dde2d4ba202a5cb42df3200be6db055a31",
+    "results/tables/table_2_unmatched_policy.csv": "db0c17dc42aeccae31b8c337c5e7583a65402a05511f9f02e52756a7a90fb66d",
+    "results/tables/table_3_matched_policy.csv": "a2b17445e281872601a987382af0e8980b03bb262657f00dc000d79965270784",
+    "results/tables/table_4_normalization.csv": "af62333020106451ef5442949412efc6c174b4bd012b7db9a91f3b6273e548a5",
+    "results/tables/table_5_resolution.csv": "e713dbcfd2f1b75bfd61def0d626d331d2b14aaf561119ce1d9c82df3e2bb230",
+    "results/tables/table_6_block_c.csv": "7f6074c4d2e691db4fdb5e983b5f7be3cbed094d6b0f9344a9fe564c1cf831e6",
+    "results/tables/table_7_claim_adjudication.csv": "08c0d0904f47179a31b07556ee3f7affc3d3d61c1614c1713c83fdee0a97106e",
+    "results/figures/figure_1_unmatched_policy_forest.pdf": "d01f0494bdc86ab6628b0cb212fe007a8ae1d9bd5acf590c162379989b923615",
+    "results/figures/figure_1_unmatched_policy_forest.png": "022cb038cc5d63826a17a81c3ebb700f595b940c05b66ca308ddd58b9e388c85",
+    "results/figures/figure_2_matched_policy_mitigation.pdf": "45cc09e3edd946ec690a8b6f7e7fd744aadcc61f733763bc3d8bad1f325aab9f",
+    "results/figures/figure_2_matched_policy_mitigation.png": "ef8148b31de595f050e5ce47635fea9ded1ecf56038fc749bdfa2aaa4dd06f9d",
+    "results/figures/figure_3_normalization_heterogeneity.pdf": "224980185daf3dd7ca773e6b61f9e55782f004fd070f099a6867196ec57dcd0a",
+    "results/figures/figure_3_normalization_heterogeneity.png": "e2d5ba6a85faad8f699a76a26d33e6d3ec5ae9c5b7ee234d3df549327ce9c66d",
+    "results/figures/figure_4_resolution_comparison.pdf": "d0765059ddd7d5a4fa385a6b87f57696bae2fa462a3d702bcfd5cb850d7df40b",
+    "results/figures/figure_4_resolution_comparison.png": "952924797c42eb52fe9770e1cb8fe1e6aba528cf1208338081d49744664b9a37",
+    "results/figures/figure_5_block_c_positive_control.pdf": "b2a469e26c731b17e893d8ca7ed2aed04cddd5cbfe914f32c047c6d8ec54907f",
+    "results/figures/figure_5_block_c_positive_control.png": "670bd92cb95a4c214533430e21ed35dbec336ddcd3fb62121468033f4a09eb21"
+  },
   "datasets": {
     "note": "Datasets are downloaded directly from the official MedMNIST Zenodo record (not repackaged here); see config.py DATASETS for exact URLs and MD5 checksums per dataset/resolution.",
     "source": "https://zenodo.org/records/10519652"

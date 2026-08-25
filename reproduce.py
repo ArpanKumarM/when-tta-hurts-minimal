@@ -1,8 +1,9 @@
 import hashlib
 import json
+import shutil
+import subprocess
 import sys
 import tarfile
-import urllib.request
 from pathlib import Path
 
 import config
@@ -30,6 +31,18 @@ def _safe_extract(tar, destination):
     tar.extractall(destination)
 
 
+def _gh_authenticated():
+    result = subprocess.run(["gh", "auth", "status"], capture_output=True)
+    return result.returncode == 0
+
+
+def _gh_release_download(repo, tag, filename, dest_dir):
+    subprocess.run(
+        ["gh", "release", "download", tag, "--repo", repo, "--pattern", filename, "--dir", str(dest_dir), "--clobber"],
+        check=True,
+    )
+
+
 def ensure_assets():
     checkpoints_present = config.CHECKPOINT_ROOT.exists() and any(config.CHECKPOINT_ROOT.iterdir())
     predictions_present = config.PREDICTION_ROOT.exists() and any(config.PREDICTION_ROOT.iterdir())
@@ -40,13 +53,20 @@ def ensure_assets():
         raise RuntimeError("assets/ missing and manifest.json not found; cannot download release archives.")
     manifest = json.loads(MANIFEST_PATH.read_text())
 
+    if not _gh_authenticated():
+        print("assets/ missing and no local checkpoints/predictions found.")
+        print("Downloading requires an authenticated GitHub CLI. Run: gh auth login")
+        raise SystemExit(1)
+
     download_dir = Path("assets/_downloads")
     download_dir.mkdir(parents=True, exist_ok=True)
+    repo = manifest["release_repo"]
+    tag = manifest["release_tag"]
     for entry in manifest["archives"]:
         dest = download_dir / entry["filename"]
         if not dest.exists() or sha256_of_file(dest) != entry["sha256"]:
-            print(f"downloading {entry['filename']} ...")
-            urllib.request.urlretrieve(entry["url"], dest)
+            print(f"downloading {entry['filename']} from {repo}@{tag} ...")
+            _gh_release_download(repo, tag, entry["filename"], download_dir)
         actual = sha256_of_file(dest)
         if actual != entry["sha256"]:
             raise RuntimeError(f"checksum mismatch for {entry['filename']}: expected {entry['sha256']}, got {actual}")
@@ -54,62 +74,39 @@ def ensure_assets():
             _safe_extract(tar, Path(entry["extract_to"]))
 
 
-def compare(name, recomputed, expected, path, mismatches):
-    if isinstance(recomputed, float) and isinstance(expected, float):
-        ok = abs(recomputed - expected) < 1e-9
-    else:
-        ok = recomputed == expected
-    if not ok:
-        mismatches.append(f"{path}: recomputed={recomputed!r} expected={expected!r}")
+def regenerate_outputs():
+    if config.RESULTS_ROOT.exists():
+        shutil.rmtree(config.RESULTS_ROOT)
+    analyze.main()
 
 
-def compare_against_canonical(recomputed):
-    canonical = json.loads((config.RESULTS_ROOT / "summary.json").read_text())
+def verify_output_hashes(manifest):
     mismatches = []
-
-    if "preregistered" not in canonical:
-        return mismatches  # canonical file uses a different schema wrapper; scientific fields compared below
-
-    for family in ("H1", "H2", "H3", "BLOCK_C"):
-        canon_cells = {c["run_id"]: c for c in canonical["preregistered"][family]["cells"]}
-        mine_cells = recomputed["preregistered"][family]["cells"]
-        for i, cell in enumerate(mine_cells):
-            theirs = canon_cells[cell["run_id"]]
-            for k in ("delta_accuracy", "ci_low", "ci_high", "bootstrap_seed"):
-                compare(family, cell["bootstrap"][k], theirs["bootstrap"][k], f"{family}.{cell['run_id']}.bootstrap.{k}", mismatches)
-            for k in ("b", "c", "n_discordant", "p_value"):
-                compare(family, cell["mcnemar"][k], theirs["mcnemar"][k], f"{family}.{cell['run_id']}.mcnemar.{k}", mismatches)
-        mine_mult = recomputed["preregistered"][family]["multiplicity"]["corrected_p_values"]
-        canon_order = [c["run_id"] for c in canonical["preregistered"][family]["cells"]]
-        canon_mult = canonical["preregistered"][family]["multiplicity"]["corrected_p_values"]
-        for i, cell in enumerate(mine_cells):
-            j = canon_order.index(cell["run_id"])
-            compare(family, mine_mult[i], canon_mult[j], f"{family}.{cell['run_id']}.corrected_p", mismatches)
-
-    for hyp in ("H1", "H2", "H3"):
-        canon_pairs = {p["pair_id"]: p for p in canonical["secondary_cross_condition"][hyp]["pairs"]}
-        for pair in recomputed["secondary_cross_condition"][hyp]["pairs"]:
-            theirs = canon_pairs[pair["pair_id"]]
-            for k in ("did", "ci_low", "ci_high", "bootstrap_seed"):
-                compare(hyp, pair["bootstrap"][k], theirs["bootstrap"][k], f"{hyp}.{pair['pair_id']}.bootstrap.{k}", mismatches)
-
+    for rel_path, expected in manifest["canonical_outputs"].items():
+        path = Path(rel_path)
+        if not path.exists():
+            mismatches.append(f"{rel_path}: missing")
+            continue
+        actual = sha256_of_file(path)
+        if actual != expected:
+            mismatches.append(f"{rel_path}: expected={expected} actual={actual}")
     return mismatches
 
 
 def main():
+    manifest = json.loads(MANIFEST_PATH.read_text())
     ensure_assets()
-    recomputed = analyze.build_summary()
-    mismatches = compare_against_canonical(recomputed)
+    regenerate_outputs()
+    mismatches = verify_output_hashes(manifest)
 
     if mismatches:
-        print("FAIL:", len(mismatches), "mismatch(es)")
-        for m in mismatches[:50]:
+        print("FAIL:", len(mismatches), "output hash mismatch(es)")
+        for m in mismatches:
             print(" -", m)
         return 1
 
-    print("PASS: recomputed scientific summary matches committed canonical results exactly.")
-    print(f"  cells checked:  {sum(recomputed['preregistered'][f]['n_cells'] for f in ('H1','H2','H3','BLOCK_C'))}")
-    print(f"  pairs checked:  {sum(recomputed['secondary_cross_condition'][h]['n_pairs'] for h in ('H1','H2','H3'))}")
+    print("PASS: regenerated summary.json, all 7 tables, and all 10 figures match canonical hashes exactly.")
+    print(f"  outputs verified: {len(manifest['canonical_outputs'])}")
     return 0
 
 

@@ -1,289 +1,6 @@
 {
-  "descriptive_summaries": {
-    "preregistered_seed_level": [
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-bloodmnist-28px-batchnorm-policy-none",
-        "max": -0.30108155510084766,
-        "mean": -0.3761083503848777,
-        "min": -0.4922537269804151,
-        "n_seeds": 9,
-        "sample_stdev": 0.08833778829905267,
-        "seed_run_ids": [
-          "A-bloodmnist-28px-batchnorm-policy-none-s0",
-          "A-bloodmnist-28px-batchnorm-policy-none-s0",
-          "A-bloodmnist-28px-batchnorm-policy-none-s0",
-          "A-bloodmnist-28px-batchnorm-policy-none-s1",
-          "A-bloodmnist-28px-batchnorm-policy-none-s1",
-          "A-bloodmnist-28px-batchnorm-policy-none-s1",
-          "A-bloodmnist-28px-batchnorm-policy-none-s2",
-          "A-bloodmnist-28px-batchnorm-policy-none-s2",
-          "A-bloodmnist-28px-batchnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-bloodmnist-28px-groupnorm-policy-none",
-        "max": -0.20695703010815558,
-        "mean": -0.23316768975932964,
-        "min": -0.2557731657410114,
-        "n_seeds": 6,
-        "sample_stdev": 0.022009121499949498,
-        "seed_run_ids": [
-          "A-bloodmnist-28px-groupnorm-policy-none-s0",
-          "A-bloodmnist-28px-groupnorm-policy-none-s0",
-          "A-bloodmnist-28px-groupnorm-policy-none-s1",
-          "A-bloodmnist-28px-groupnorm-policy-none-s1",
-          "A-bloodmnist-28px-groupnorm-policy-none-s2",
-          "A-bloodmnist-28px-groupnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-bloodmnist-64px-batchnorm-policy-none",
-        "max": -0.49108447822274187,
-        "mean": -0.5556854720841858,
-        "min": -0.6609178602747734,
-        "n_seeds": 6,
-        "sample_stdev": 0.08221448567572795,
-        "seed_run_ids": [
-          "A-bloodmnist-64px-batchnorm-policy-none-s0",
-          "A-bloodmnist-64px-batchnorm-policy-none-s0",
-          "A-bloodmnist-64px-batchnorm-policy-none-s1",
-          "A-bloodmnist-64px-batchnorm-policy-none-s1",
-          "A-bloodmnist-64px-batchnorm-policy-none-s2",
-          "A-bloodmnist-64px-batchnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-bloodmnist-64px-groupnorm-policy-none",
-        "max": -0.3905290850628471,
-        "mean": -0.47744324271655464,
-        "min": -0.5700087693656826,
-        "n_seeds": 6,
-        "sample_stdev": 0.08038503715494903,
-        "seed_run_ids": [
-          "A-bloodmnist-64px-groupnorm-policy-none-s0",
-          "A-bloodmnist-64px-groupnorm-policy-none-s0",
-          "A-bloodmnist-64px-groupnorm-policy-none-s1",
-          "A-bloodmnist-64px-groupnorm-policy-none-s1",
-          "A-bloodmnist-64px-groupnorm-policy-none-s2",
-          "A-bloodmnist-64px-groupnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-pathmnist-28px-batchnorm-policy-none",
-        "max": -0.18760445682451254,
-        "mean": -0.3375116063138347,
-        "min": -0.4227019498607242,
-        "n_seeds": 9,
-        "sample_stdev": 0.11277934164726522,
-        "seed_run_ids": [
-          "A-pathmnist-28px-batchnorm-policy-none-s0",
-          "A-pathmnist-28px-batchnorm-policy-none-s0",
-          "A-pathmnist-28px-batchnorm-policy-none-s0",
-          "A-pathmnist-28px-batchnorm-policy-none-s1",
-          "A-pathmnist-28px-batchnorm-policy-none-s1",
-          "A-pathmnist-28px-batchnorm-policy-none-s1",
-          "A-pathmnist-28px-batchnorm-policy-none-s2",
-          "A-pathmnist-28px-batchnorm-policy-none-s2",
-          "A-pathmnist-28px-batchnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-pathmnist-28px-groupnorm-policy-none",
-        "max": -0.4423398328690808,
-        "mean": -0.4670844939647168,
-        "min": -0.48718662952646236,
-        "n_seeds": 6,
-        "sample_stdev": 0.02037593826270096,
-        "seed_run_ids": [
-          "A-pathmnist-28px-groupnorm-policy-none-s0",
-          "A-pathmnist-28px-groupnorm-policy-none-s0",
-          "A-pathmnist-28px-groupnorm-policy-none-s1",
-          "A-pathmnist-28px-groupnorm-policy-none-s1",
-          "A-pathmnist-28px-groupnorm-policy-none-s2",
-          "A-pathmnist-28px-groupnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-pathmnist-64px-batchnorm-policy-none",
-        "max": -0.3735376044568245,
-        "mean": -0.3855153203342618,
-        "min": -0.39345403899721443,
-        "n_seeds": 6,
-        "sample_stdev": 0.009440390461177782,
-        "seed_run_ids": [
-          "A-pathmnist-64px-batchnorm-policy-none-s0",
-          "A-pathmnist-64px-batchnorm-policy-none-s0",
-          "A-pathmnist-64px-batchnorm-policy-none-s1",
-          "A-pathmnist-64px-batchnorm-policy-none-s1",
-          "A-pathmnist-64px-batchnorm-policy-none-s2",
-          "A-pathmnist-64px-batchnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "A-pathmnist-64px-groupnorm-policy-none",
-        "max": -0.4437325905292479,
-        "mean": -0.4837511606313835,
-        "min": -0.5192200557103064,
-        "n_seeds": 6,
-        "sample_stdev": 0.03394246905548284,
-        "seed_run_ids": [
-          "A-pathmnist-64px-groupnorm-policy-none-s0",
-          "A-pathmnist-64px-groupnorm-policy-none-s0",
-          "A-pathmnist-64px-groupnorm-policy-none-s1",
-          "A-pathmnist-64px-groupnorm-policy-none-s1",
-          "A-pathmnist-64px-groupnorm-policy-none-s2",
-          "A-pathmnist-64px-groupnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "B-bloodmnist-28px-batchnorm-policy-matched_mixed",
-        "max": 0.02952353113124817,
-        "mean": 0.014713046867387725,
-        "min": 0.0035077462730196407,
-        "n_seeds": 3,
-        "sample_stdev": 0.01337734194133831,
-        "seed_run_ids": [
-          "B-bloodmnist-28px-batchnorm-policy-matched_mixed-s0",
-          "B-bloodmnist-28px-batchnorm-policy-matched_mixed-s1",
-          "B-bloodmnist-28px-batchnorm-policy-matched_mixed-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "B-pathmnist-28px-batchnorm-policy-matched_mixed",
-        "max": 0.04094707520891361,
-        "mean": 0.015598885793871883,
-        "min": -0.012116991643454034,
-        "n_seeds": 3,
-        "sample_stdev": 0.02661114912318306,
-        "seed_run_ids": [
-          "B-pathmnist-28px-batchnorm-policy-matched_mixed-s0",
-          "B-pathmnist-28px-batchnorm-policy-matched_mixed-s1",
-          "B-pathmnist-28px-batchnorm-policy-matched_mixed-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "C-dermamnist-28px-resnet18-batchnorm-policy-none",
-        "max": 0.0024937655860348684,
-        "mean": -0.008645054031587737,
-        "min": -0.028927680798005007,
-        "n_seeds": 3,
-        "sample_stdev": 0.01759357070344262,
-        "seed_run_ids": [
-          "C-dermamnist-28px-resnet18-batchnorm-policy-none-s0",
-          "C-dermamnist-28px-resnet18-batchnorm-policy-none-s1",
-          "C-dermamnist-28px-resnet18-batchnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "D-bloodmnist-128px-batchnorm-policy-none",
-        "max": -0.5118386436714412,
-        "mean": -0.5805320081847413,
-        "min": -0.6322712657117802,
-        "n_seeds": 3,
-        "sample_stdev": 0.061980524527096285,
-        "seed_run_ids": [
-          "D-bloodmnist-128px-batchnorm-policy-none-s0",
-          "D-bloodmnist-128px-batchnorm-policy-none-s1",
-          "D-bloodmnist-128px-batchnorm-policy-none-s2"
-        ]
-      },
-      {
-        "classification": "descriptive_non_inferential",
-        "group": "D-pathmnist-128px-batchnorm-policy-none",
-        "max": -0.27506963788300837,
-        "mean": -0.35965645311049205,
-        "min": -0.41685236768802225,
-        "n_seeds": 3,
-        "sample_stdev": 0.07475481052448807,
-        "seed_run_ids": [
-          "D-pathmnist-128px-batchnorm-policy-none-s0",
-          "D-pathmnist-128px-batchnorm-policy-none-s1",
-          "D-pathmnist-128px-batchnorm-policy-none-s2"
-        ]
-      }
-    ]
-  },
-  "inputs": {
-    "cross_condition:H1": {
-      "analysis_id": "d9e335e0f28b578631975e83442480e59055edab2d2ba340a71a70f44bc93b7f",
-      "attempt": 1,
-      "final_test_analysis_fingerprint": "91d1556538d6aec0dde4e7be81810035973d0bc9176a73ed8913d4fbe4ba0edc",
-      "final_test_authorization_sha256": "1e217e7e678ce37cee5c2b51fbf76429aa0b3b5298e622b1bbcb5363a6969f32",
-      "identifier": "H1",
-      "kind": "cross_condition",
-      "primary_artifact_hash": "6624abeff9112b416bed92a4124dc1d38504548a0e66fa3db8b999bfa1b6cbe2"
-    },
-    "cross_condition:H2": {
-      "analysis_id": "5645a6cd96f414c173937a27fcc133c3bc5547eec454fae1787aa14bc6edd09c",
-      "attempt": 1,
-      "final_test_analysis_fingerprint": "91d1556538d6aec0dde4e7be81810035973d0bc9176a73ed8913d4fbe4ba0edc",
-      "final_test_authorization_sha256": "1e217e7e678ce37cee5c2b51fbf76429aa0b3b5298e622b1bbcb5363a6969f32",
-      "identifier": "H2",
-      "kind": "cross_condition",
-      "primary_artifact_hash": "2350de61c3ff83362eb9a0ab2cd88ff736c5f4c2ebd9f90eb97e46700ab11732"
-    },
-    "cross_condition:H3": {
-      "analysis_id": "5bc1e82cc6a07932b0b736c6f8d37396a47ba0be94e59632a1d36d764ddcd6a7",
-      "attempt": 1,
-      "final_test_analysis_fingerprint": "91d1556538d6aec0dde4e7be81810035973d0bc9176a73ed8913d4fbe4ba0edc",
-      "final_test_authorization_sha256": "1e217e7e678ce37cee5c2b51fbf76429aa0b3b5298e622b1bbcb5363a6969f32",
-      "identifier": "H3",
-      "kind": "cross_condition",
-      "primary_artifact_hash": "f7922b2984aba16c8a5a0833d9f0d500e8bc58a15fedd5529011dc70375f9bf8"
-    },
-    "family:BLOCK_C": {
-      "analysis_id": "360f3bf01727fcdade1425480e7a62a001f9684b28b10bbdba8904de6f1e643f",
-      "attempt": 1,
-      "final_test_analysis_fingerprint": "91d1556538d6aec0dde4e7be81810035973d0bc9176a73ed8913d4fbe4ba0edc",
-      "final_test_authorization_sha256": "1e217e7e678ce37cee5c2b51fbf76429aa0b3b5298e622b1bbcb5363a6969f32",
-      "identifier": "BLOCK_C",
-      "kind": "family",
-      "primary_artifact_hash": "025f8150afcd2af03261a8cf0a6d3fc12f6c41a256c94a3903a6eaab1dabfc41"
-    },
-    "family:H1": {
-      "analysis_id": "5cc611bcdedf0f721f28c44ef5044b599045ec133797bc9185c8f339bf1f125b",
-      "attempt": 1,
-      "final_test_analysis_fingerprint": "91d1556538d6aec0dde4e7be81810035973d0bc9176a73ed8913d4fbe4ba0edc",
-      "final_test_authorization_sha256": "1e217e7e678ce37cee5c2b51fbf76429aa0b3b5298e622b1bbcb5363a6969f32",
-      "identifier": "H1",
-      "kind": "family",
-      "primary_artifact_hash": "967847d958d20a63bd0331a5d70bca412228773aa7f10a818b129e51fb69fefd"
-    },
-    "family:H2": {
-      "analysis_id": "dfbc33f0e2fc7cc8300faf07a64d8c7a9a282cc6ee27f9193c4ec87cfd76aee5",
-      "attempt": 1,
-      "final_test_analysis_fingerprint": "91d1556538d6aec0dde4e7be81810035973d0bc9176a73ed8913d4fbe4ba0edc",
-      "final_test_authorization_sha256": "1e217e7e678ce37cee5c2b51fbf76429aa0b3b5298e622b1bbcb5363a6969f32",
-      "identifier": "H2",
-      "kind": "family",
-      "primary_artifact_hash": "c5fa6e61ebb2469b3698ab0cb72577bafe2dd960e26e9c84a56940ae3c849097"
-    },
-    "family:H3": {
-      "analysis_id": "fa74d98d22a4f25875ef6284f98cb7f21b1030aba9ccb6c4148f1a779f48db56",
-      "attempt": 1,
-      "final_test_analysis_fingerprint": "91d1556538d6aec0dde4e7be81810035973d0bc9176a73ed8913d4fbe4ba0edc",
-      "final_test_authorization_sha256": "1e217e7e678ce37cee5c2b51fbf76429aa0b3b5298e622b1bbcb5363a6969f32",
-      "identifier": "H3",
-      "kind": "family",
-      "primary_artifact_hash": "f426d1e012dfede44a8a5f26097a63d7ca6317343b334b618a6fb559423e9cca"
-    }
-  },
   "preregistered": {
     "BLOCK_C": {
-      "analysis_id": "360f3bf01727fcdade1425480e7a62a001f9684b28b10bbdba8904de6f1e643f",
-      "attempt": 1,
       "cells": [
         {
           "bootstrap": {
@@ -383,8 +100,6 @@
       "n_cells": 3
     },
     "H1": {
-      "analysis_id": "5cc611bcdedf0f721f28c44ef5044b599045ec133797bc9185c8f339bf1f125b",
-      "attempt": 1,
       "cells": [
         {
           "bootstrap": {
@@ -1093,8 +808,6 @@
       "n_cells": 24
     },
     "H2": {
-      "analysis_id": "dfbc33f0e2fc7cc8300faf07a64d8c7a9a282cc6ee27f9193c4ec87cfd76aee5",
-      "attempt": 1,
       "cells": [
         {
           "bootstrap": {
@@ -1977,8 +1690,6 @@
       "n_cells": 30
     },
     "H3": {
-      "analysis_id": "fa74d98d22a4f25875ef6284f98cb7f21b1030aba9ccb6c4148f1a779f48db56",
-      "attempt": 1,
       "cells": [
         {
           "bootstrap": {
@@ -2339,19 +2050,9 @@
       "n_cells": 12
     }
   },
-  "provenance": {
-    "cross_condition_results_commit": "29a3bfe",
-    "final_test_closure_commit": "581143e6d1c080c3bfaad941514a356089313926",
-    "preregistered_results_commit": "4426bf55476d1761afe15ded4d56d48ded0fee51",
-    "unsealing_freeze_commit": "486028c3b2e40014a38b3bfc818e113a95d39f9c"
-  },
-  "reporting_fingerprint": "2c9ac6b2398db4ef49c28510fdabcb7f0e48a4d046c5614fccd00da271cf8026",
-  "schema_version": "phase2b.8a-v1",
+  "schema_version": "minimal-v1",
   "secondary_cross_condition": {
     "H1": {
-      "analysis_id": "d9e335e0f28b578631975e83442480e59055edab2d2ba340a71a70f44bc93b7f",
-      "attempt": 1,
-      "classification": "post_validation_pre_test_secondary",
       "n_pairs": 12,
       "pairs": [
         {
@@ -2365,11 +2066,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "bbca1ebde38faf861fa4b7e7d4bb58dc387e18aa7d1738889756c36c122ac5d2",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "1f427b0b2c0408e53ca4a84ca3d662877d4493e54dc3e6b06b9e63d6473bb1c7",
             "run_id": "A-bloodmnist-28px-groupnorm-policy-none-s0"
           },
           "hypothesis": "H1",
@@ -2387,11 +2086,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "c78a0d4579ab60b2ca5b51c579e8cfb2f4f444bf3ff981d7402b2e4706c597c6",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "2d3061a6feb794edd6b3a2a8545eea80035e55101137ae6c3decfcbbf269955c",
             "run_id": "A-bloodmnist-28px-groupnorm-policy-none-s1"
           },
           "hypothesis": "H1",
@@ -2409,11 +2106,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "d5545158ddfee68041fd95c95bf991c0cd7c8eb198be10571c7e481a7c4adddf",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "c1e2991feef4fca786c0370f467bcf6d74acba81d0927ce8c76c98ef1e67634c",
             "run_id": "A-bloodmnist-28px-groupnorm-policy-none-s2"
           },
           "hypothesis": "H1",
@@ -2431,11 +2126,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "d0df3762a5681ea75586b2d3e93763ccc6c4d2c67fb100d2b6480e8af7e57a00",
             "run_id": "A-bloodmnist-64px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "78161679ecee2aa6ed5d96e8e8f57ff3b9d679d455ce73f53ca6aefce295701c",
             "run_id": "A-bloodmnist-64px-groupnorm-policy-none-s0"
           },
           "hypothesis": "H1",
@@ -2453,11 +2146,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "7a7ad2751b7db7ac99fdbb495c7670625809889933bb8bef12d1c1323f4637c1",
             "run_id": "A-bloodmnist-64px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "14ace3332a7487d8ba7125c6c006394fc81ee063a708b8bfa85aebea5411edf9",
             "run_id": "A-bloodmnist-64px-groupnorm-policy-none-s1"
           },
           "hypothesis": "H1",
@@ -2475,11 +2166,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "b54328a0db0888094cb0e2d0af8911cd511c6655d7d47376e7ddb3d78fc9ed97",
             "run_id": "A-bloodmnist-64px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "88da2e8ef634a665f71ca2616537c2f092a5a6ac60e3e9dd957765623636780e",
             "run_id": "A-bloodmnist-64px-groupnorm-policy-none-s2"
           },
           "hypothesis": "H1",
@@ -2497,11 +2186,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "e846df3f5a95fa8745599d1f71809a84ebf86e2fbfbe8bc5aee4c1e4f9b96b20",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "aba8b96333a5e5a9fb2af2b44e93ae480f285a385cedf8093707195a2840186a",
             "run_id": "A-pathmnist-28px-groupnorm-policy-none-s0"
           },
           "hypothesis": "H1",
@@ -2519,11 +2206,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "e521fffa6340fb39c39e06b1dbacbccf5661f40ce0521203d91ffdf533d8728f",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "3c645dbb7e1204c9653657b8eeae0620823697f0222feb48e21ef5a1d2ffe712",
             "run_id": "A-pathmnist-28px-groupnorm-policy-none-s1"
           },
           "hypothesis": "H1",
@@ -2541,11 +2226,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "d53f92ada672a539167bcf68ddd5129c14d90727df0ffbde4e539cc408804ebb",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "d052d35057e304fc021ccdf74e33c8042f57076bb0374a1b2d03cbc7d393e735",
             "run_id": "A-pathmnist-28px-groupnorm-policy-none-s2"
           },
           "hypothesis": "H1",
@@ -2563,11 +2246,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "f53c1aa7a91572d48af09c54df07906273944c1003d9a8164a3c5b3123bc7458",
             "run_id": "A-pathmnist-64px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "200751a5edbc1f73a23f021149bf85508ba1cbb9ed042d51675fec848dc7a70a",
             "run_id": "A-pathmnist-64px-groupnorm-policy-none-s0"
           },
           "hypothesis": "H1",
@@ -2585,11 +2266,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "1ca16b8dbc1ad6551da49ba721ffb0d5afe8613656e12704c3526750095a969c",
             "run_id": "A-pathmnist-64px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "7929cbed052aff39c5488a5ac523a47301a8dabd631ef37a66fd76fce953faed",
             "run_id": "A-pathmnist-64px-groupnorm-policy-none-s1"
           },
           "hypothesis": "H1",
@@ -2607,11 +2286,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "29d5766adae389e078b00030be7eb6fe1f3cfb70672d14bb6fd4d7d9a06d3b39",
             "run_id": "A-pathmnist-64px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "097e5368b0f2814b0e97a617d1e9ae1fd0279268c112445cf3826acb0318b8c9",
             "run_id": "A-pathmnist-64px-groupnorm-policy-none-s2"
           },
           "hypothesis": "H1",
@@ -2621,9 +2298,6 @@
       ]
     },
     "H2": {
-      "analysis_id": "5645a6cd96f414c173937a27fcc133c3bc5547eec454fae1787aa14bc6edd09c",
-      "attempt": 1,
-      "classification": "post_validation_pre_test_secondary",
       "n_pairs": 12,
       "pairs": [
         {
@@ -2637,11 +2311,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "bbca1ebde38faf861fa4b7e7d4bb58dc387e18aa7d1738889756c36c122ac5d2",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "d0df3762a5681ea75586b2d3e93763ccc6c4d2c67fb100d2b6480e8af7e57a00",
             "run_id": "A-bloodmnist-64px-batchnorm-policy-none-s0"
           },
           "hypothesis": "H2",
@@ -2659,11 +2331,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "c78a0d4579ab60b2ca5b51c579e8cfb2f4f444bf3ff981d7402b2e4706c597c6",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "7a7ad2751b7db7ac99fdbb495c7670625809889933bb8bef12d1c1323f4637c1",
             "run_id": "A-bloodmnist-64px-batchnorm-policy-none-s1"
           },
           "hypothesis": "H2",
@@ -2681,11 +2351,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "d5545158ddfee68041fd95c95bf991c0cd7c8eb198be10571c7e481a7c4adddf",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "b54328a0db0888094cb0e2d0af8911cd511c6655d7d47376e7ddb3d78fc9ed97",
             "run_id": "A-bloodmnist-64px-batchnorm-policy-none-s2"
           },
           "hypothesis": "H2",
@@ -2703,11 +2371,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "1f427b0b2c0408e53ca4a84ca3d662877d4493e54dc3e6b06b9e63d6473bb1c7",
             "run_id": "A-bloodmnist-28px-groupnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "78161679ecee2aa6ed5d96e8e8f57ff3b9d679d455ce73f53ca6aefce295701c",
             "run_id": "A-bloodmnist-64px-groupnorm-policy-none-s0"
           },
           "hypothesis": "H2",
@@ -2725,11 +2391,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "2d3061a6feb794edd6b3a2a8545eea80035e55101137ae6c3decfcbbf269955c",
             "run_id": "A-bloodmnist-28px-groupnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "14ace3332a7487d8ba7125c6c006394fc81ee063a708b8bfa85aebea5411edf9",
             "run_id": "A-bloodmnist-64px-groupnorm-policy-none-s1"
           },
           "hypothesis": "H2",
@@ -2747,11 +2411,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "c1e2991feef4fca786c0370f467bcf6d74acba81d0927ce8c76c98ef1e67634c",
             "run_id": "A-bloodmnist-28px-groupnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "88da2e8ef634a665f71ca2616537c2f092a5a6ac60e3e9dd957765623636780e",
             "run_id": "A-bloodmnist-64px-groupnorm-policy-none-s2"
           },
           "hypothesis": "H2",
@@ -2769,11 +2431,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "e846df3f5a95fa8745599d1f71809a84ebf86e2fbfbe8bc5aee4c1e4f9b96b20",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "f53c1aa7a91572d48af09c54df07906273944c1003d9a8164a3c5b3123bc7458",
             "run_id": "A-pathmnist-64px-batchnorm-policy-none-s0"
           },
           "hypothesis": "H2",
@@ -2791,11 +2451,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "e521fffa6340fb39c39e06b1dbacbccf5661f40ce0521203d91ffdf533d8728f",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "1ca16b8dbc1ad6551da49ba721ffb0d5afe8613656e12704c3526750095a969c",
             "run_id": "A-pathmnist-64px-batchnorm-policy-none-s1"
           },
           "hypothesis": "H2",
@@ -2813,11 +2471,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "d53f92ada672a539167bcf68ddd5129c14d90727df0ffbde4e539cc408804ebb",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "29d5766adae389e078b00030be7eb6fe1f3cfb70672d14bb6fd4d7d9a06d3b39",
             "run_id": "A-pathmnist-64px-batchnorm-policy-none-s2"
           },
           "hypothesis": "H2",
@@ -2835,11 +2491,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "aba8b96333a5e5a9fb2af2b44e93ae480f285a385cedf8093707195a2840186a",
             "run_id": "A-pathmnist-28px-groupnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "200751a5edbc1f73a23f021149bf85508ba1cbb9ed042d51675fec848dc7a70a",
             "run_id": "A-pathmnist-64px-groupnorm-policy-none-s0"
           },
           "hypothesis": "H2",
@@ -2857,11 +2511,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "3c645dbb7e1204c9653657b8eeae0620823697f0222feb48e21ef5a1d2ffe712",
             "run_id": "A-pathmnist-28px-groupnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "7929cbed052aff39c5488a5ac523a47301a8dabd631ef37a66fd76fce953faed",
             "run_id": "A-pathmnist-64px-groupnorm-policy-none-s1"
           },
           "hypothesis": "H2",
@@ -2879,11 +2531,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "d052d35057e304fc021ccdf74e33c8042f57076bb0374a1b2d03cbc7d393e735",
             "run_id": "A-pathmnist-28px-groupnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "097e5368b0f2814b0e97a617d1e9ae1fd0279268c112445cf3826acb0318b8c9",
             "run_id": "A-pathmnist-64px-groupnorm-policy-none-s2"
           },
           "hypothesis": "H2",
@@ -2893,9 +2543,6 @@
       ]
     },
     "H3": {
-      "analysis_id": "5bc1e82cc6a07932b0b736c6f8d37396a47ba0be94e59632a1d36d764ddcd6a7",
-      "attempt": 1,
-      "classification": "post_validation_pre_test_secondary",
       "n_pairs": 6,
       "pairs": [
         {
@@ -2909,11 +2556,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "bbca1ebde38faf861fa4b7e7d4bb58dc387e18aa7d1738889756c36c122ac5d2",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "1d3047c51052b87799d505291f785605c330c508a3af8f0a37b6896f0ceca5a9",
             "run_id": "B-bloodmnist-28px-batchnorm-policy-matched_mixed-s0"
           },
           "hypothesis": "H3",
@@ -2931,11 +2576,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "c78a0d4579ab60b2ca5b51c579e8cfb2f4f444bf3ff981d7402b2e4706c597c6",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "3193abd75055e982f7e2f38803f7753859d7b717d0a482d5d8dc1590732d9f52",
             "run_id": "B-bloodmnist-28px-batchnorm-policy-matched_mixed-s1"
           },
           "hypothesis": "H3",
@@ -2953,11 +2596,9 @@
             "n_samples": 3421
           },
           "condition_a": {
-            "evaluation_id": "d5545158ddfee68041fd95c95bf991c0cd7c8eb198be10571c7e481a7c4adddf",
             "run_id": "A-bloodmnist-28px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "17da97945bbd10d2c24d1fe980fa2f9d352f2069ba76b9e3331c13f4024c5a15",
             "run_id": "B-bloodmnist-28px-batchnorm-policy-matched_mixed-s2"
           },
           "hypothesis": "H3",
@@ -2975,11 +2616,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "e846df3f5a95fa8745599d1f71809a84ebf86e2fbfbe8bc5aee4c1e4f9b96b20",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s0"
           },
           "condition_b": {
-            "evaluation_id": "aa4335001cea248f38149f2819dbd54600ca7290c007ad0ca2a4d2f77d06959e",
             "run_id": "B-pathmnist-28px-batchnorm-policy-matched_mixed-s0"
           },
           "hypothesis": "H3",
@@ -2997,11 +2636,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "e521fffa6340fb39c39e06b1dbacbccf5661f40ce0521203d91ffdf533d8728f",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s1"
           },
           "condition_b": {
-            "evaluation_id": "0fc97c1e3775a7fdebb5a8f2af0a4b74d3529353a2a63ea61bbdae1ce31738f3",
             "run_id": "B-pathmnist-28px-batchnorm-policy-matched_mixed-s1"
           },
           "hypothesis": "H3",
@@ -3019,11 +2656,9 @@
             "n_samples": 7180
           },
           "condition_a": {
-            "evaluation_id": "d53f92ada672a539167bcf68ddd5129c14d90727df0ffbde4e539cc408804ebb",
             "run_id": "A-pathmnist-28px-batchnorm-policy-none-s2"
           },
           "condition_b": {
-            "evaluation_id": "a8122d758cf92e9c7de3d3403ca783b42dea76a3df8215547b5a9b8e62d069e0",
             "run_id": "B-pathmnist-28px-batchnorm-policy-matched_mixed-s2"
           },
           "hypothesis": "H3",
