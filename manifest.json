@@ -1,0 +1,75 @@
+{
+  "canonical_artifact_version": "generation-2",
+  "canonical_summary_sha256": "23cc083741e4e16fae232c9fce7d2c4095bc4e40d5897fd7956c550a78e24fce",
+  "release_base_url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0",
+  "archives": [
+    {
+      "filename": "checkpoints_block_a.tar.gz",
+      "content": "block A training checkpoints",
+      "size_bytes": 8537670,
+      "sha256": "9314082cdbca740442c7f6d8c9d94f7bda163886391a14bacb4dbd612786e00b",
+      "extract_to": "assets/checkpoints",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_a.tar.gz"
+    },
+    {
+      "filename": "checkpoints_block_b.tar.gz",
+      "content": "block B training checkpoints",
+      "size_bytes": 2140578,
+      "sha256": "e97c13ff67f2d6519fa3d7ac6384e93079190ff70af71b9993e5cc7b549e7cd4",
+      "extract_to": "assets/checkpoints",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_b.tar.gz"
+    },
+    {
+      "filename": "checkpoints_block_c.tar.gz",
+      "content": "block C training checkpoints",
+      "size_bytes": 124623331,
+      "sha256": "57e2d22ed7484f92f51e355007eb7e1a375434aba750a65235a46b1094924d67",
+      "extract_to": "assets/checkpoints",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_c.tar.gz"
+    },
+    {
+      "filename": "checkpoints_block_d.tar.gz",
+      "content": "block D training checkpoints",
+      "size_bytes": 2139998,
+      "sha256": "51738a4be9f3a517af5ac7ad81c2e927fc133e6fb696df6ae40947e9d1bf77e2",
+      "extract_to": "assets/checkpoints",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/checkpoints_block_d.tar.gz"
+    },
+    {
+      "filename": "predictions_block_a.tar.gz",
+      "content": "block A final-test predictions",
+      "size_bytes": 442103319,
+      "sha256": "030e625d98d292577c8c51237b042fa8124a25f20e8f64b27fdb6f1e410045bc",
+      "extract_to": "assets/predictions",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_a.tar.gz"
+    },
+    {
+      "filename": "predictions_block_b.tar.gz",
+      "content": "block B final-test predictions",
+      "size_bytes": 113664183,
+      "sha256": "3fc8ea099c96ff0ff157cdefdd74b65adbaa442afe76dd5a5ab151f411c4b182",
+      "extract_to": "assets/predictions",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_b.tar.gz"
+    },
+    {
+      "filename": "predictions_block_c.tar.gz",
+      "content": "block C final-test predictions",
+      "size_bytes": 17139287,
+      "sha256": "192ee39f457555e89941abd0be2d656496cc2d86a939b842392597b38bd7f4c3",
+      "extract_to": "assets/predictions",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_c.tar.gz"
+    },
+    {
+      "filename": "predictions_block_d.tar.gz",
+      "content": "block D final-test predictions",
+      "size_bytes": 114473017,
+      "sha256": "a1782fcedebb2ac73c3e098b71c29b350400717cdfbd0aa2bb83576c5e674639",
+      "extract_to": "assets/predictions",
+      "url": "https://github.com/ArpanKumarM/when-tta-hurts-minimal/releases/download/v1.0.0/predictions_block_d.tar.gz"
+    }
+  ],
+  "datasets": {
+    "note": "Datasets are downloaded directly from the official MedMNIST Zenodo record (not repackaged here); see config.py DATASETS for exact URLs and MD5 checksums per dataset/resolution.",
+    "source": "https://zenodo.org/records/10519652"
+  }
+}
