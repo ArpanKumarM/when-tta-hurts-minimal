@@ -31,19 +31,22 @@ assets/        data/checkpoints/predictions (git-ignored; downloaded or generate
 - [`uv`](https://docs.astral.sh/uv/)
 - Python 3.12 (installed automatically by `uv` if not already present)
 
-## Authentication (private repository)
+## GitHub CLI authentication
 
-This repository and its release assets are private. Before cloning or
-running `reproduce.py`, authenticate the GitHub CLI once:
+This repository and its release assets are public. `reproduce.py`
+downloads the release archives with `gh release download`; running
+`gh auth login` once first is recommended so the download is not
+subject to the low unauthenticated GitHub API rate limit, but it is not
+otherwise required.
 
 ```bash
-gh auth login
+gh auth login   # optional, avoids rate limiting
 ```
 
 ## Fresh-clone reproduction
 
 ```bash
-gh repo clone <owner>/when-tta-hurts-minimal
+git clone https://github.com/ArpanKumarM/when-tta-hurts-minimal.git
 cd when-tta-hurts-minimal
 uv sync --frozen
 uv run python reproduce.py
@@ -53,11 +56,11 @@ uv run python reproduce.py
 
 1. If `assets/checkpoints/` and `assets/predictions/` are not already
    present locally, downloads the eight release archives via
-   `gh release download` (requires `gh auth login`; fails closed with a
-   short message if not authenticated), verifies each archive's SHA-256
-   against `manifest.json`, and extracts them (rejecting any archive
-   entry that would extract outside its target directory or that is a
-   symlink/hardlink).
+   `gh release download` (public assets; `gh auth login` is optional and
+   only avoids GitHub's unauthenticated rate limit), verifies each
+   archive's SHA-256 against `manifest.json`, and extracts them
+   (rejecting any archive entry that would extract outside its target
+   directory or that is a symlink/hardlink).
 2. Recomputes the scientific summary (paired bootstrap, McNemar,
    Benjamini-Hochberg, difference-in-differences) from the 39 canonical
    prediction arrays, and regenerates `results/summary.json`, all seven
