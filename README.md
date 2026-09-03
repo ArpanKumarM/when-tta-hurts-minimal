@@ -17,6 +17,7 @@ model.py       SmallCNN, ResNet-18 (small-input adaptation)
 train.py       training loop (Adam, cosine schedule, early stopping)
 evaluate.py    clean + 100-view TTA inference, aggregation, BN-adaptation, metrics
 analyze.py     paired bootstrap, McNemar, BH-FDR, difference-in-differences, tables, figures
+analyze_extended.py  post-review extras: view-count scaling curve, aggregation/anchoring/BN-adaptation, calibration
 reproduce.py   asset acquisition + checksum verification + exact-output regeneration and verification
 manifest.json  release-archive and canonical-output filenames/sizes/hashes
 results/       summary.json, CSV tables, PDF/PNG figures (tracked in git)
@@ -128,6 +129,30 @@ weights.
   classification, unmatched-policy cells, matched-policy comparison,
   normalization DiD, resolution DiD, BLOCK_C, claim adjudication).
 - `results/figures/*.{pdf,png}` -- the five corresponding figures.
+
+## Post-review extended analyses
+
+`analyze_extended.py` computes the paper's "Extended Analyses" that are a
+pure re-aggregation of the released predictions:
+
+```
+uv run python analyze_extended.py
+```
+
+It writes `results/extended_summary.json` and
+`results/tables/scaling_curve.csv`, covering the **view-count scaling
+curve** (delta accuracy at N = 1..100 for the 30 unmatched cells, with
+paired-bootstrap CIs), the **aggregation-rule ablation** (mean vs.
+majority vote vs. confidence-weighted), **clean-anchoring**,
+**BatchNorm-statistics adaptation**, and **calibration** (ECE / NLL /
+Brier).
+
+The paper's other two post-review pieces -- the **label-preservation
+audit** and the **per-augmentation-component decomposition** -- live in
+the full repository (`when-tta-hurts`, protocols under its
+`docs/phase2c2_*`). The checkpoints and predictions bundled here are
+sufficient to re-run them with that repo's scripts
+(`label_preservation_audit.py`, `component_ablation.py`).
 
 ## Main result boundaries
 
